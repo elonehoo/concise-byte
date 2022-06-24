@@ -64,3 +64,9 @@ test('locale option',()=>{
   expect(conciseByte(10.1, {locale: undefined})).toBe('10.1 B')
   expect(conciseByte(1e30, {locale: undefined})).toBe('1000000 YB')
 })
+
+test('signed option',()=>{
+  expect(conciseByte(42, {signed: true})).toBe('+42 B')
+  expect(conciseByte(-13, {signed: true})).toBe('-13 B')
+  expect(conciseByte(0, {signed: true})).toBe(' 0 B')
+})
