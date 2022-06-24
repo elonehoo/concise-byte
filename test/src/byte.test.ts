@@ -26,3 +26,41 @@ test('supports negative number',()=>{
   expect(conciseByte(-999)).toBe('-999 B')
   expect(conciseByte(-1001)).toBe('-1 kB')
 })
+
+test('locale option',()=>{
+  expect(conciseByte(-0.4, {locale: 'de'})).toBe('-0,4 B')
+  expect(conciseByte(0.4, {locale: 'de'})).toBe('0,4 B')
+  expect(conciseByte(1001, {locale: 'de'})).toBe('1 kB')
+  expect(conciseByte(10.1, {locale: 'de'})).toBe('10,1 B')
+  expect(conciseByte(1e30, {locale: 'de'})).toBe('1.000.000 YB')
+
+  expect(conciseByte(-0.4, {locale: 'en'})).toBe('-0.4 B')
+  expect(conciseByte(0.4, {locale: 'en'})).toBe('0.4 B')
+  expect(conciseByte(1001, {locale: 'en'})).toBe('1 kB')
+  expect(conciseByte(10.1, {locale: 'en'})).toBe('10.1 B')
+  expect(conciseByte(1e30, {locale: 'en'})).toBe('1,000,000 YB')
+
+  expect(conciseByte(-0.4, {locale: ['unknown', 'de', 'en']})).toBe('-0,4 B')
+  expect(conciseByte(0.4, {locale: ['unknown', 'de', 'en']})).toBe('0,4 B')
+  expect(conciseByte(1001, {locale: ['unknown', 'de', 'en']})).toBe('1 kB')
+  expect(conciseByte(10.1, {locale: ['unknown', 'de', 'en']})).toBe('10,1 B')
+  expect(conciseByte(1e30, {locale: ['unknown', 'de', 'en']})).toBe('1.000.000 YB')
+
+  expect(conciseByte(-0.4, {locale: true})).toBe('-0.4 B')
+  expect(conciseByte(0.4, {locale: true})).toBe('0.4 B')
+  expect(conciseByte(1001, {locale: true})).toBe('1 kB')
+  expect(conciseByte(10.1, {locale: true})).toBe('10.1 B')
+  expect(conciseByte(1e30, {locale: true})).toBe('1,000,000 YB')
+
+  expect(conciseByte(-0.4, {locale: false})).toBe('-0.4 B')
+  expect(conciseByte(0.4, {locale: false})).toBe('0.4 B')
+  expect(conciseByte(1001, {locale: false})).toBe('1 kB')
+  expect(conciseByte(10.1, {locale: false})).toBe('10.1 B')
+  expect(conciseByte(1e30, {locale: false})).toBe('1000000 YB')
+
+  expect(conciseByte(-0.4, {locale: undefined})).toBe('-0.4 B')
+  expect(conciseByte(0.4, {locale: undefined})).toBe('0.4 B')
+  expect(conciseByte(1001, {locale: undefined})).toBe('1 kB')
+  expect(conciseByte(10.1, {locale: undefined})).toBe('10.1 B')
+  expect(conciseByte(1e30, {locale: undefined})).toBe('1000000 YB')
+})
