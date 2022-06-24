@@ -1,0 +1,19 @@
+{
+  "name": "@titem/core",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Convert bytes to a human readable",
+  "author": "Elone Hoo <huchengyea@163.com>",
+  "license": "MIT",
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "rimraf dist && unbuild",
+    "stub": "unbuild --stub",
+    "prepublishOnly": "pnpm run build",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "unbuild": "^0.7.4"
+  }
+}
