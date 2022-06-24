@@ -94,3 +94,12 @@ test('binary option',()=>{
   expect(conciseByte(1e16, {binary: true})).toBe('8.88 PiB')
   expect(conciseByte(1e30, {binary: true})).toBe('827000 YiB')
 })
+
+test('bits and binary option',()=>{
+  expect(conciseByte(0, {bits: true, binary: true})).toBe('0 b')
+  expect(conciseByte(4, {bits: true, binary: true})).toBe('4 b')
+  expect(conciseByte(10, {bits: true, binary: true})).toBe('10 b')
+  expect(conciseByte(999, {bits: true, binary: true})).toBe('999 b')
+  expect(conciseByte(1025, {bits: true, binary: true})).toBe('1 kibit')
+  expect(conciseByte(1e6, {bits: true, binary: true})).toBe('977 kibit')
+})
