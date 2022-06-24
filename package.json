@@ -11,7 +11,10 @@
     "release": "bumpp package.json core/package.json --commit --push --tag && pnpm -r publish --access public",
     "typeCheck": "tsc --noEmit",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test": "pnpm -C test run test",
+    "coverage": "pnpm -C test run coverage",
+    "reporter": "pnpm -C test run reporter"
   },
   "devDependencies": {
     "@elonehoo/eslint-config": "^2.0.0",
