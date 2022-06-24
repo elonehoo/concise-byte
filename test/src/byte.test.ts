@@ -70,3 +70,15 @@ test('signed option',()=>{
   expect(conciseByte(-13, {signed: true})).toBe('-13 B')
   expect(conciseByte(0, {signed: true})).toBe(' 0 B')
 })
+
+test('bits option',()=>{
+  expect(conciseByte(0, {bits: true})).toBe('0 b')
+  expect(conciseByte(0.4, {bits: true})).toBe('0.4 b')
+  expect(conciseByte(0.7, {bits: true})).toBe('0.7 b')
+  expect(conciseByte(10, {bits: true})).toBe('10 b')
+  expect(conciseByte(10.1, {bits: true})).toBe('10.1 b')
+  expect(conciseByte(999, {bits: true})).toBe('999 b')
+  expect(conciseByte(1001, {bits: true})).toBe('1 kbit')
+  expect(conciseByte(1e16, {bits: true})).toBe('10 Pbit')
+  expect(conciseByte(1e30, {bits: true})).toBe('1000000 Ybit')
+})
