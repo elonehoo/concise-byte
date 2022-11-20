@@ -8,7 +8,7 @@ importers:
       '@types/node': 18.7.16
       bumpp: 8.2.1
       eslint: 8.23.0
-      pnpm: 7.11.0
+      pnpm: 7.16.1
       rimraf: 3.0.2
       typescript: 4.8.3
       unbuild: 0.8.10
@@ -18,7 +18,7 @@ importers:
       '@types/node': 18.7.16
       bumpp: 8.2.1
       eslint: 8.23.0
-      pnpm: 7.11.0
+      pnpm: 7.16.1
       rimraf: 3.0.2
       typescript: 4.8.3
       unbuild: 0.8.10
@@ -3307,8 +3307,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/7.11.0:
-    resolution: {integrity: sha512-cxh4TfCE8L4ZbLBN72kTGKTYP7X08nrIzoQ2rQCKihAcIHAdNIgsk4bEJyE1xHjE+bNJt9skwr7aJv3LpvUawQ==}
+  /pnpm/7.16.1:
+    resolution: {integrity: sha512-vtAw/kJ+Slm/XdLvd3zbSA8FKBgetrk+1KQFDnyvPP0q2Pjc1f2HsA7idYs9MJewYi4o03cjyZhAdqrCcjknsw==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true
@@ -3467,7 +3467,7 @@ packages:
       rollup: 2.79.0
       typescript: 4.8.3
     optionalDependencies:
-      '@babel/code-frame': 7.16.7
+      '@babel/code-frame': 7.18.6
     dev: true
 
   /rollup-plugin-esbuild/4.10.1_esbuild@0.15.7+rollup@2.79.0:
