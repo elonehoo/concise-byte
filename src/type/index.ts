@@ -44,10 +44,10 @@ export interface Options {
   readonly maximumFractionDigits?: number
 }
 
-export const BYTE_UNITS = ['B','kB','MB','GB','TB','PB','EB','ZB','YB']
+export const BYTE_UNITS = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
 
-export const BIBYTE_UNITS = ['B','kiB','MiB','GiB','TiB','PiB','EiB','ZiB','YiB']
+export const BIBYTE_UNITS = ['B', 'kiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB']
 
-export const BIT_UNITS = ['b','kbit','Mbit','Gbit','Tbit','Pbit','Ebit','Zbit','Ybit']
+export const BIT_UNITS = ['b', 'kbit', 'Mbit', 'Gbit', 'Tbit', 'Pbit', 'Ebit', 'Zbit', 'Ybit']
 
-export const BIBIT_UNITS = ['b','kibit','Mibit','Gibit','Tibit','Pibit','Eibit','Zibit','Yibit']
+export const BIBIT_UNITS = ['b', 'kibit', 'Mibit', 'Gibit', 'Tibit', 'Pibit', 'Eibit', 'Zibit', 'Yibit']
