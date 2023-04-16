@@ -1,6 +1,5 @@
 {
   "name": "@elonehoo/concise-byte",
-  "type": "module",
   "version": "0.0.1",
   "description": "Convert bytes to a human readable",
   "license": "MIT",
