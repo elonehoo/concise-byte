@@ -1,6 +1,6 @@
 {
   "name": "@elonehoo/concise-byte",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert bytes to a human readable",
   "license": "MIT",
   "author": "Elone Hoo <huchengyea@163.com>",
