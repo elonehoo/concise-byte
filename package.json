@@ -42,15 +42,15 @@
   },
   "devDependencies": {
     "@elonehoo/eslint-config": "2.0.0",
-    "@types/node": "20.2.3",
-    "bumpp": "9.1.0",
-    "c8": "^7.13.0",
-    "eslint": "8.41.0",
-    "pnpm": "8.5.1",
+    "@types/node": "20.3.3",
+    "bumpp": "9.1.1",
+    "c8": "^8.0.0",
+    "eslint": "8.44.0",
+    "pnpm": "8.6.6",
     "rimraf": "5.0.1",
-    "typescript": "5.0.4",
+    "typescript": "5.1.6",
     "unbuild": "1.2.1",
-    "vite": "4.3.8",
-    "vitest": "^0.31.1"
+    "vite": "4.3.9",
+    "vitest": "^0.32.4"
   }
 }
