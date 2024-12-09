@@ -43,7 +43,7 @@
   "devDependencies": {
     "@elonehoo/eslint-config": "2.0.0",
     "@types/node": "22.10.1",
-    "bumpp": "9.8.1",
+    "bumpp": "9.9.0",
     "c8": "^10.1.2",
     "eslint": "9.16.0",
     "pnpm": "9.15.0",
